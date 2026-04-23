@@ -7,12 +7,14 @@ import { AuthProvider } from "@/context/AuthContext";
 import Login from "./pages/Login";
 import AdminDashboard from "./pages/AdminDashboard";
 import StaffDashboard from "./pages/StaffDashboard";
-import Placeholder from "./pages/Placeholder";
 import CRMPage from "./pages/admin/CRMPage";
 import SalesPage from "./pages/admin/SalesPage";
 import InstallationPage from "./pages/admin/InstallationPage";
 import AIAutomationPage from "./pages/admin/AIAutomationPage";
 import SettingsPage from "./pages/admin/SettingsPage";
+import MyLeadsPage from "./pages/staff/MyLeadsPage";
+import TasksPage from "./pages/staff/TasksPage";
+import SchedulePage from "./pages/staff/SchedulePage";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
