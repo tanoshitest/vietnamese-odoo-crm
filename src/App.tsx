@@ -35,9 +35,9 @@ const App = () => (
             <Route path="/admin/ai" element={<AIAutomationPage />} />
             <Route path="/admin/settings" element={<SettingsPage />} />
             <Route path="/staff" element={<StaffDashboard />} />
-            <Route path="/staff/leads" element={<Placeholder title="Lead của tôi" role="staff" />} />
-            <Route path="/staff/tasks" element={<Placeholder title="Công việc hôm nay" role="staff" />} />
-            <Route path="/staff/schedule" element={<Placeholder title="Lịch trình" role="staff" />} />
+            <Route path="/staff/leads" element={<MyLeadsPage />} />
+            <Route path="/staff/tasks" element={<TasksPage />} />
+            <Route path="/staff/schedule" element={<SchedulePage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
