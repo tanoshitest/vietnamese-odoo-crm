@@ -8,6 +8,11 @@ import Login from "./pages/Login";
 import AdminDashboard from "./pages/AdminDashboard";
 import StaffDashboard from "./pages/StaffDashboard";
 import Placeholder from "./pages/Placeholder";
+import CRMPage from "./pages/admin/CRMPage";
+import SalesPage from "./pages/admin/SalesPage";
+import InstallationPage from "./pages/admin/InstallationPage";
+import AIAutomationPage from "./pages/admin/AIAutomationPage";
+import SettingsPage from "./pages/admin/SettingsPage";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -22,11 +27,11 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Login />} />
             <Route path="/admin" element={<AdminDashboard />} />
-            <Route path="/admin/crm" element={<Placeholder title="CRM" role="admin" />} />
-            <Route path="/admin/sales" element={<Placeholder title="Bán hàng" role="admin" />} />
-            <Route path="/admin/installation" element={<Placeholder title="Lắp đặt & Thi công" role="admin" />} />
-            <Route path="/admin/ai" element={<Placeholder title="AI Tự động hóa" role="admin" />} />
-            <Route path="/admin/settings" element={<Placeholder title="Cài đặt" role="admin" />} />
+            <Route path="/admin/crm" element={<CRMPage />} />
+            <Route path="/admin/sales" element={<SalesPage />} />
+            <Route path="/admin/installation" element={<InstallationPage />} />
+            <Route path="/admin/ai" element={<AIAutomationPage />} />
+            <Route path="/admin/settings" element={<SettingsPage />} />
             <Route path="/staff" element={<StaffDashboard />} />
             <Route path="/staff/leads" element={<Placeholder title="Lead của tôi" role="staff" />} />
             <Route path="/staff/tasks" element={<Placeholder title="Công việc hôm nay" role="staff" />} />
